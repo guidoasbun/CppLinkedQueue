@@ -44,3 +44,23 @@ void LinkedQueue::pop()
         --count;
     }
 }
+
+bool LinkedQueue::empty() const
+{
+    return !count;
+}
+
+int LinkedQueue::front() const
+{
+    return ptrToFront->getData();
+}
+
+int LinkedQueue::back() const
+{
+    return ptrToBack->getData();
+}
+
+size_t LinkedQueue::size() const
+{
+    return count;
+}

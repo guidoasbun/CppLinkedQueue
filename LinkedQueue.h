@@ -38,6 +38,10 @@ public:
     ****************************************/
     void push(int);
     void pop();
+    bool empty() const;
+    int front() const;
+    int back() const;
+    size_t size() const;
 
 private:
     Node* ptrToFront;
