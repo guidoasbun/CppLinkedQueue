@@ -37,6 +37,7 @@ public:
 
     ****************************************/
     void push(int);
+    void pop();
 
 private:
     Node* ptrToFront;

@@ -23,3 +23,24 @@ void LinkedQueue::push(int newData)
     }
     ++count;
 }
+
+void LinkedQueue::pop()
+{
+    if (count == 0)
+        cerr << "Cannot delete from an empty list.\n";
+    else if (count == 1)
+    {
+        delete ptrToFront;
+        ptrToFront = nullptr;
+        ptrToBack = nullptr;
+        --count;
+    }
+    else
+    {
+        Node* temp = ptrToFront;
+        ptrToFront = ptrToFront->getNext();
+        delete temp;
+        temp = nullptr;
+        --count;
+    }
+}
