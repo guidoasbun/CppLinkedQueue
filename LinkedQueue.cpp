@@ -1,5 +1,5 @@
 //
-// Created by guido on 10/16/2021.
+// Created by Guido Asbun on 10/16/2021.
 //
 
 #include "LinkedQueue.h"
